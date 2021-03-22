@@ -8,5 +8,6 @@ module.exports = {
         open: true,
         hot: true,
         port: 8010,
+        
     }
 };
