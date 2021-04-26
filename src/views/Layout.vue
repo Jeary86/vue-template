@@ -4,21 +4,26 @@
             <!--mode="out-in"-->
             <Loading v-if="loaderName === 'loading'"  />
             <Home v-if="loaderName === 'home'" />
+            <About v-if="loaderName === 'about'" />
         </transition>
     </div>
 </template>
 
 <script>
+    import Loading from "./Loading"
+    import Home from "./Home"
+    import About from "./About";
     import { mapGetters } from 'vuex'
     export default {
         name: "Layout",
+        components: {About, Loading, Home},
         data(){
             return {
 
             }
         },
         computed: {
-            ...mapGetters(['loaderName','pageNature']),
+            ...mapGetters(['loaderName']),
         },
         watch : {
             loaderName(val){

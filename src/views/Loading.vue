@@ -52,7 +52,7 @@
 
                     this.loadingInterval = setInterval(() => {
                         const loadingTime = new Date().getTime() - startTime
-                        this.realProgress = global.loader.progress * (loadingTime / 3000) //至少要loading 3秒（假loading）
+                        this.realProgress = global.loader.progress * (loadingTime / 300) //至少要loading 3秒（假loading）
                         this.number = Math.round(this.realProgress)
                         // this.aniIndex = Math.round(this.progress * 6 / 100)
 

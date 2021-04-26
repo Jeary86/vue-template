@@ -7,7 +7,7 @@
 
 <script>
     import Layout from "./views/Layout";
-    import FlipEquipment from "./components/FlipEquipment";
+    import FlipEquipment from "./views/FlipEquipment";
 
     export default {
         name: 'app',

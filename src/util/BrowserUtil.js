@@ -1,4 +1,4 @@
-/** 
+/**
  * 浏览器判断
 */
 export default class BrowserUtil {
@@ -17,7 +17,7 @@ export default class BrowserUtil {
   }
 
   static isIpad() {
-    var u = navigator.userAgent
+    let u = navigator.userAgent
     return /iPad/i.test(navigator.userAgent)
   }
 }
